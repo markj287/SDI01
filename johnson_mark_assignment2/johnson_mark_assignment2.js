@@ -23,7 +23,6 @@ var goSwimming = function(currentTemp){
 goSwimming(64) // calls the string function
 
 // start number function
-
 var playVideoGames = function(numberOfCousins,numberOfBrothers){
 	var familyMemmbers = numberOfCousins + numberOfBrothers;
 	while(familyMemmbers >=5){
@@ -35,3 +34,17 @@ var playVideoGames = function(numberOfCousins,numberOfBrothers){
 } // end number function 
 
 console.log("It is " + playVideoGames(3,4) + " of them here");
+
+// boolean functiomn
+var sleepOver = function(answer) {
+	var momWorking = true;
+	if (momWorking == true){
+		console.log(charName + " says mom is working overnight, so i'll sleep at my grandma house");
+	} else {
+		console.log(charName + " says mom is home tonight");
+	}
+	return momWorking;
+
+}; // end boolean function
+
+sleepOver(false) // calls boolean function
