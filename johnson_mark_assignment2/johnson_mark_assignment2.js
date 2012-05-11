@@ -22,3 +22,16 @@ var goSwimming = function(currentTemp){
 
 goSwimming(64) // calls the string function
 
+// start number function
+
+var playVideoGames = function(numberOfCousins,numberOfBrothers){
+	var familyMemmbers = numberOfCousins + numberOfBrothers;
+	while(familyMemmbers >=5){
+		console.log(charName + " says, let's go play some video gmaes!");
+		familyMemmbers--;
+	}
+
+	return familyMemmbers;
+} // end number function 
+
+console.log("It is " + playVideoGames(3,4) + " of them here");
