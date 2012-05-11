@@ -6,7 +6,7 @@
 var charName = "Mark",
 	numberOfCousins = 3,
 	numberOfBrothers = 2,
-	cousinsName = ["Mike","Drer"]
+	cousinsName = ["Mike","Dre"]
 ;
 
 // start string function
@@ -37,22 +37,24 @@ console.log("It is " + playVideoGames(3,4) + " of them here");
 var sleepOver = function(answer) {
 	var momWorking = true;
 	if (momWorking == true){
-		console.log(charName + " says mom is working overnight, so i'll sleep at my grandma house");
+		console.log(answer +  " mom is working overnight. I'll sleep at my grandma house");
 	} else {
 		console.log(charName + " says mom is home tonight");
 	}
 	return momWorking;
 
 }; // end boolean function
-sleepOver(false) // calls boolean function
+sleepOver("Yes,") // calls boolean function
 
 
 // array function
 var bestFood = function(grandmaName){
 	var grandMaName;
-	for(var i=0, j=brothersName.length; i<j; i++){
-		console.log(charName + " loves his grandma food so do " + brothersName[i] + " but " + brothersName[1] + " dont.")
+	for(var i=0, j=cousinsName.length; i<j; i++){
+		console.log(charName + " loves his grandma " + grandmaName + " food so do " + cousinsName[i] + " but " + cousinsName[i] + " dont.")
 	}
 	return grandMaName;
 } // ends array function
 bestFood("sandra") // calls array function
+
+
