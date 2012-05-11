@@ -4,36 +4,21 @@
 
 
 var charName = "Mark",
-	relatives = ["Mike","Dan","Dre","Dwayne"],
-	numOfCousins = 2,
-	numOfFriends = 6,
-	playBasketball = true,
-	impressGirls = true
+	numberOfCousins = 3,
+	numberOfBrothers = 2,
+	cousinsName = ["Mike","Drer"]
 ;
 
-// function with no arguments or no returns  
-var goSwimming = function () {
-	var certainTime = 6
-	var currentTime = new Date()
-
-	if (currentTime >= certainTime) {
-		console.log(charName + " It's a little too late to go swimming.")
-	} // end if statement
-}
-goSwimming()
-
-var goPlaying = function () {
-	var cousinsPresent = true 
-	var friendsPresent = true
-
-	if (cousinsPresent = true) {
-		console.log(charName + " says, we can go on the swings for about 30 minutes.")
+// start string function
+var goSwimming = function(currentTemp){
+	var currentTemp;
+	if(currentTemp <= 63){
+		console.log(charName + " says it's too cold. We have to wait til later");
+	} else {
+		console.log(charName + " says yah, it's nice and hot. Let's go swimming");
 	}
-}
+	return currentTemp;
+}; // end string function
 
-
-
-
-
-
+goSwimming(64) // calls the string function
 
