@@ -12,14 +12,14 @@ var charName = "Mark",
 // start string function
 var goSwimming = function(currentTemp){
 	var currentTemp;
-	if(currentTemp <= 63){
-		console.log(charName + " says it's too cold. We have to wait til later");
+	if(currentTemp <= 55){
+		console.log(charName + " says " + currentTemp + " degrees." + "That's a little cold. Let's wait til later");
 	} else {
 		console.log(charName + " says yah, it's nice and hot. Let's go swimming");
 	}
 	return currentTemp;
 }; // end string function
-goSwimming(64) // calls the string function
+goSwimming(40) // calls the string function
 
 // start number function
 var playVideoGames = function(numberOfCousins,numberOfBrothers){
