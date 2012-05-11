@@ -19,7 +19,6 @@ var goSwimming = function(currentTemp){
 	}
 	return currentTemp;
 }; // end string function
-
 goSwimming(64) // calls the string function
 
 // start number function
@@ -32,7 +31,6 @@ var playVideoGames = function(numberOfCousins,numberOfBrothers){
 
 	return familyMemmbers;
 } // end number function 
-
 console.log("It is " + playVideoGames(3,4) + " of them here");
 
 // boolean functiomn
@@ -46,5 +44,15 @@ var sleepOver = function(answer) {
 	return momWorking;
 
 }; // end boolean function
-
 sleepOver(false) // calls boolean function
+
+
+// array function
+var bestFood = function(grandmaName){
+	var grandMaName;
+	for(var i=0, j=brothersName.length; i<j; i++){
+		console.log(charName + " loves his grandma food so do " + brothersName[i] + " but " + brothersName[1] + " dont.")
+	}
+	return grandMaName;
+} // ends array function
+bestFood("sandra") // calls array function
