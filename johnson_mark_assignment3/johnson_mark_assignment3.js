@@ -17,18 +17,21 @@ var charName = "Mark",
 	cousinsName = ["Mike","Dre"]
 ;
 
-// object with string prperty, number property and array property
+// object with string prperty, number property, boolean property, array property and object property
 var descriptionOfChar = {
 	name: "Mark",
 	weight: 77,
+	goodKid: true,
 	interests: [
 		"basketball",
 		"video games",
 		"cartoons"
-	]
-
-
+	],
+	sayHi: function () {
+		console.log("Hello Wordl!")
+	}
 }
+ 
 
 // start string function
 var goSwimming = function(currentTemp){
