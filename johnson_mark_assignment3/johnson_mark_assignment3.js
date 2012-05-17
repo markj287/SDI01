@@ -107,4 +107,49 @@ var bestFood = function(grandmaName){
 } // ends array function
 bestFood("sandra") // calls array function
 
+// object argument 
+weekendDays = {
+	dayone: "friday",
+	daytwo: "saturday",
+	daythree: "sunday",
+	weekend: function (weekendDays) {
+		var weekend;
+		if (weekend == weekend){
+			console.log("It's the weekend and i love it")
+		} else {
+			console.log("It's not the weekend yet, that sucks")
+		}
+		return weekendDays
+	}
+}
+for (var key in weekendDays) {
+	console.log(weekendDays[key])
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
