@@ -28,7 +28,7 @@ var charDescription = {
 		"cartoons"
 	],
 	sayHi: function () {
-		console.log("Playing with my family is fun")
+		console.log("Playing with my cousins and brothers is fun")
 	},
 	address: {
 		street: " 54 Copin Drive",
@@ -37,9 +37,25 @@ var charDescription = {
 	}
 }
 
+console.log(charDescription["sayHi"]) // output the method in the object 
+
 charDescription.sayHi = function () {
 	console.log("But sometines they make me annoyed")
+} // changes to method sayHi
+
+//charDescription["sayHi"]() // output the change made 
+
+// object with accessor method 
+var house = {
+	street: "256 6th st",
+	city: "Miami",
+	state: "Florida",
+	goTo: function (address) {
+		return address
+	}
 }
+
+house["goTo"]() // output accesor method 
  
 
 // start string function
