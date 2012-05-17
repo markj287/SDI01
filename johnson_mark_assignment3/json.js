@@ -2,39 +2,39 @@
 var bradleyFamily = {
 	"members": [
 		{
-			"name": "mommacarla",
+			"name": "Momma Carla",
 			"age": 34,
-			"occupation": "nurse"
+			"occupation": "Nurse"
 		},
 		{
-			'name': 'daddyjohnathon',
+			'name': 'Daddy Johnathon',
 			'age': 37,
-			'occupation': 'truckdriver'
+			'occupation': 'Truckdriver'
 		},
 		{
-			'name': 'gmomsuzzy',
+			'name': 'Gmom Suzzy',
 			'age': 57,
-			'occupation': 'retireddoctor'
+			'occupation': 'Retired Doctor'
 		},
 		{
-			'name': 'gpopbob',
+			'name': 'Gpop Bob',
 			'age': 62,
-			'occupation': 'retiredsurgeon'
+			'occupation': 'Retired Surgeon'
 		},
 		{
-			'name': 'daughtersammy',
+			'name': 'Daughter Sammy',
 			'age': 10,
-			'occupation': 'student'
+			'occupation': 'Student'
 		},
 		{
-			'name': 'sondavid',
+			'name': 'Son David',
 			'age': 8,
-			'occupation': 'student'
+			'occupation': 'Student'
 		},
 		{
-			'name': 'babyjasmin',
+			'name': 'Baby Jasmin',
 			'age': '5 months',
-			'occupation': 'none'
+			'occupation': 'Baby'
 		}
 	]
 };

@@ -8,3 +8,5 @@ var handleData = function (bradleyFamily) {
 		console.log('Family member name: ' + member.name + ', Age: ' + member.age + ', Occupation: ' + member.occupation);
 	};   // console log info about family 
 };
+// calls json function
+handleData(bradleyFamily) 
