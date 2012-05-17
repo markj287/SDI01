@@ -43,7 +43,7 @@ charDescription.sayHi = function () {
 	console.log("But sometines they make me annoyed")
 } // changes to method sayHi
 
-//charDescription["sayHi"]() // output the change made 
+charDescription["sayHi"]() // output the change made 
 
 // object with accessor method 
 var house = {
@@ -98,11 +98,12 @@ sleepOver("Yes,") // calls boolean function
 
 // array function
 var bestFood = function(grandmaName){
+	var grandMaInterests = ["watch tv", "read newspaper", "relax"]
 	var grandMaName;
 	for(var i=0, j=cousinsName.length; i<j; i++){
 		console.log(charName + " loves his grandma " + grandmaName + " food so do " + cousinsName[i] + " but " + cousinsName[i] + " dont.")
 	}
-	return grandMaName;
+	return grandMaInterests;
 } // ends array function
 bestFood("sandra") // calls array function
 
