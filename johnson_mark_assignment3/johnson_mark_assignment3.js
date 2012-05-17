@@ -1,1 +1,3 @@
-alert("JavaScript works!");
+// Mark Johnson
+// Project 3
+
