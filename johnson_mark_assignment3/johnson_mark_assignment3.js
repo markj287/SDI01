@@ -18,7 +18,7 @@ var charName = "Mark",
 ;
 
 // object with string prperty, number property, boolean property, array property and object property
-var descriptionOfChar = {
+var charDescription = {
 	name: "Mark",
 	weight: 77,
 	goodKid: true,
@@ -28,8 +28,17 @@ var descriptionOfChar = {
 		"cartoons"
 	],
 	sayHi: function () {
-		console.log("Hello Wordl!")
+		console.log("Playing with my family is fun")
+	},
+	address: {
+		street: " 54 Copin Drive",
+		city: "Miami",
+		state: "Florida"
 	}
+}
+
+charDescription.sayHi = function () {
+	console.log("But sometines they make me annoyed")
 }
  
 
