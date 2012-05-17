@@ -1,40 +1,20 @@
 
-var bradleyFamily = {
+var jonesFamily = {
 	"members": [
 		{
-			"name": "Momma Carla",
-			"age": 34,
-			"occupation": "Nurse"
+			"name": "Mark",
+			"age": 15,
+			"occupation": "Student"
 		},
 		{
-			'name': 'Daddy Johnathon',
-			'age': 37,
-			'occupation': 'Truckdriver'
-		},
-		{
-			'name': 'Gmom Suzzy',
-			'age': 57,
-			'occupation': 'Retired Doctor'
-		},
-		{
-			'name': 'Gpop Bob',
-			'age': 62,
-			'occupation': 'Retired Surgeon'
-		},
-		{
-			'name': 'Daughter Sammy',
-			'age': 10,
+			'name': 'Mike',
+			'age': 13,
 			'occupation': 'Student'
 		},
 		{
-			'name': 'Son David',
-			'age': 8,
+			'name': 'Dre',
+			'age': 14,
 			'occupation': 'Student'
-		},
-		{
-			'name': 'Baby Jasmin',
-			'age': '5 months',
-			'occupation': 'Baby'
 		}
 	]
 };

@@ -3,19 +3,32 @@
 
 // funtion for json data
 var handleData = function (bradleyFamily) {
-	for (i = 0; i < bradleyFamily.members.length; i++){
-		var member = bradleyFamily.members[i];
+	for (i = 0; i < jonesFamily.members.length; i++){
+		var member = jonesFamily.members[i];
 		console.log('Family member name: ' + member.name + ', Age: ' + member.age + ', Occupation: ' + member.occupation);
 	};   // console log info about family 
 };
 // calls json function
-handleData(bradleyFamily) 
+handleData(jonesFamily) 
 
 var charName = "Mark",
 	numberOfCousins = 3,
 	numberOfBrothers = 2,
 	cousinsName = ["Mike","Dre"]
 ;
+
+// object with string prperty, number property and array property
+var descriptionOfChar = {
+	name: "Mark",
+	weight: 77,
+	interests: [
+		"basketball",
+		"video games",
+		"cartoons"
+	]
+
+
+}
 
 // start string function
 var goSwimming = function(currentTemp){
