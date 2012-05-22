@@ -19,6 +19,17 @@ var myLibrary = function () {
 		var urlPatt = new Regexp ("^(http[s]?://|ftp://)?(www\.)?[a-zA-Z0-9-\.]+\.(com|org|net|mil|edu|ca|co.uk|com.au|gov)$"); // regular exp check the pattern of a url. I used the reg exp built in contructor method 
 	}
 
+	// Function to get smallest number in an array
+	var smallestValue = function() {
+	// this is an array constructor that will get the min value in my array 
+		Array.prototype.minGreaterThan = function(a){
+			var number = [100,37,103,23,54,31,26,78,109,34],givenNumber = 20; // private array with given number set at 20
+			var t = this,r = Number.POSITIVE_INFINITY,i; // this is the positive infinity property. This will allow us to find the samllest value less than the given number
+				for (i = 0; i<t.length; i++) 
+					if (a<t[i] && t[i] < r) r = t[i];
+		}	
+	}
+
 	return {
 		"number": checkNumber,
 		"numpatt": numpatt.test(n), // reg exp test method. This will search the string for a specified value, and return true or false 
@@ -26,6 +37,13 @@ var myLibrary = function () {
 		"emailPatt": emailPatt.test(e), // reg exp test method. This will search the string for a specified value, and return true or false 
 		"url": checkUrl,
 		"urlPatt": urlPatt.test(u) // reg exp test method. This will search the string for a specified value, and return true or false 
+		"small": smallestValue,
+		"r": r,  // this is the number that is given in the array 
+
+
+
+
+
 	}
 }
 
