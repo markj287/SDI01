@@ -50,11 +50,26 @@ var myLibrary = function () {
 		"urlPatt": urlPatt.test(u), // reg exp test method. This will search the string for a specified value, and return true or false 
 		"small": smallestValue,
 		"r": r,  // this is the number that is given in the array 
-
-
-
-
-
+		"sum": sumOfNumbers
 	}
 }
+
+
+checkNumber()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
