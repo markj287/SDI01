@@ -21,11 +21,11 @@ var myLibrary = function () {
 
 	return {
 		"number": checkNumber,
-		"numpatt": numpatt.test(n),
+		"numpatt": numpatt.test(n), // reg exp test method. This will search the string for a specified value, and return true or false 
 		"email": checkEmail,
-		"emailPatt": emailPatt.test(e),
+		"emailPatt": emailPatt.test(e), // reg exp test method. This will search the string for a specified value, and return true or false 
 		"url": checkUrl,
-		"urlPatt": urlPatt.test(u)
+		"urlPatt": urlPatt.test(u) // reg exp test method. This will search the string for a specified value, and return true or false 
 	}
 }
 
