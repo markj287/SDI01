@@ -9,17 +9,13 @@ var myLibrary = function () {
 		var numPatt = /^[2-9]\d{2}-\d{3}-\d{4}$/; // regular exp check the pattern of a phone number
 	}
 
-
-
-
-
-	return {
-		"checkNumber": checkNumber,
+	// Function to check email match 
+	var checkEmail = function () {
+		var emailPatt = /^([0-9a-zA-Z]+([_.-]?[0-9a-zA-Z]+)*@[0-9a-zA-Z]+[0-9,a-z,A-Z,.,-]*(.){1}[a-zA-Z]{2,4})+$/; // regular exp check the pattern of a email address
 	}
-}
-// condition to check if the phone number format is correct 
-if (checkNumber("250-555-4542")) {
-	console.log("That looks like a phone number to me")
-} else {
-	console.log("This is not a number!")
+
+return {
+		"checkNumber": checkNumber,
+		"checkEmail": checkEmail
+	}
 }
