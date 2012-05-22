@@ -4,7 +4,7 @@
 
 // My javascript library 
 myLibray = {
- 	// Sting method to check if its a phone number format 
+ 	// method to check if its a phone number format 
  	checkNumber: function (n) {
  		var numPatt = /(^-*\d+$)|(^-*\d+\.\d+$)/;  // regular expression to check for a phone number 
 
@@ -18,7 +18,13 @@ myLibray = {
  		return emailPatt.test(e) // this is a regular expression test method that searches the string for a specified value
  	} // end checkEmail method
 
+ 	// method to if its an url
+ 	checkUrl: function (u) {
+ 		var urlPatt = /(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/ // regular expression to check url format 
 
+
+		return urlPatt.test(u) // this is a regular expression test method that searches the string for a specified value
+ 	} // end checkUrl method 
 
 }
 
