@@ -27,14 +27,8 @@ myLibray = {
 
  	// method to get the smallest value in an array
  	getValue: function () {
- 		Array.prototype.MinGreaterThan = function (a) {
- 			var t = this,r = Number.POSITIVE_INFINITY,i;
+ 	
 
- 			for (i = 0; i<t.length; i++) 
-				if (a<t[i] && t[i] < r) r = t[i];
-		return r;
- 		} 	
- 		
  	}, // ends getValue method 
 
 } // end my library method 
