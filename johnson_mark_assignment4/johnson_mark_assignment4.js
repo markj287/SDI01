@@ -3,3 +3,15 @@
 
 
 // My javascript library 
+var myLibrary = function () {
+	
+
+
+
+
+
+	return {
+		"":,
+		"":,
+	}
+}
