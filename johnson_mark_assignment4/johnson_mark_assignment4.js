@@ -16,7 +16,7 @@ var myLibrary = function () {
 
 	// Function to check url match 
 	var checkUrl = function () {
-		var urlPatt = new Regexp (""); // regular exp check the pattern of a url. I used the reg exp built in contructor method 
+		var urlPatt = new Regexp ("^(http[s]?://|ftp://)?(www\.)?[a-zA-Z0-9-\.]+\.(com|org|net|mil|edu|ca|co.uk|com.au|gov)$"); // regular exp check the pattern of a url. I used the reg exp built in contructor method 
 	}
 
 	return {
@@ -25,3 +25,4 @@ var myLibrary = function () {
 		"checkUrl": checkUrl
 	}
 }
+
