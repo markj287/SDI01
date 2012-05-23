@@ -41,6 +41,11 @@ var myLibrary = function () {
 
 	} // end sum of all numbers function 
 
+	// Function to convert a string to a number 
+	var stringConversion = function() {
+		console.log(parseInt("42"));  // used parseInt function to convert it to an actual number 
+	}
+
 	return {
 		"number": checkNumber,
 		"numpatt": numpatt.test(n), // reg exp test method. This will search the string for a specified value, and return true or false 
@@ -50,12 +55,13 @@ var myLibrary = function () {
 		"urlPatt": urlPatt.test(u), // reg exp test method. This will search the string for a specified value, and return true or false 
 		"small": smallestValue,
 		"r": r,  // this is the number that is given in the array 
-		"sum": sumOfNumbers
+		"sum": sumOfNumbers,
+		"convert": stringConversion
 	}
 }
 
 
-checkNumber()
+stringConversion()
 
 
 
