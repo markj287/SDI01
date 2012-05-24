@@ -61,8 +61,8 @@ var myLibrary = function () {
 }
 
 
-var checkNumber = myLibrary()
-checkNumber()
+// create a library vairable 
+var lib = myLibrary()
 
 
 
