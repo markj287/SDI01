@@ -53,6 +53,8 @@ var myLibrary = function () {
 			var t = this,r = Number.POSITIVE_INFINITY,i; // this is the positive infinity property. This will allow us to find the samllest value less than the given number
 				for (i = 0; i<t.length; i++) 
 					if (a<t[i] && t[i] < r) r = t[i];
+
+				console.log(givenNumber)
 		}	
 	} // end samllest value function 
 
@@ -64,10 +66,14 @@ var myLibrary = function () {
 	var sumOfNumbers = function () {
 		var sum = [67,45,34,37,156,22,7,8,3,"b"]; // private array 
 		var result = 0;
-
+		// use function isNaN to find numbers different from strings in the array
 		for (var i = 0; i< sum.length; i++) {
-			result += sum[i];
-		}
+			if (!isNaN(parseInt(sum[i]))) {
+				result += sum[i];
+			} // end if statment
+		} // end for loop 
+
+		console.log(result)
 	} // end sum of all numbers function 
 
 
