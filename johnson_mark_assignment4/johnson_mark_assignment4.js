@@ -7,19 +7,27 @@ var myLibrary = function () {
 
 
 	// Function to check phone number match 
-	var checkNumber = function (n) {
-		var numPatt = /^[2-9]\d{2}-\d{3}-\d{4}$/; // regular exp check the pattern of a phone number
-	} // end check number function 
+	var checkNumber = function () {
+		var numPatt = /^[2-9]\d{2}-\d{3}-\d{4}$/.test("250-345-7586"); // regular exp check the pattern of a phone number
+		console.log(numPatt)
+	} // end check number function
+
+	// Notes about this function.
+	// I use the test method to search the regular exp to make sure it matches my phone number criteria 
+	// Console.log numPatt so we can see the results of the test method 
 
 
 
 
 	// Function to check email match 
-	var checkEmail = function (e) {
-		var emailPatt = /^([0-9a-zA-Z]+([_.-]?[0-9a-zA-Z]+)*@[0-9a-zA-Z]+[0-9,a-z,A-Z,.,-]*(.){1}[a-zA-Z]{2,4})+$/; // regular exp check the pattern of a email address
+	var checkEmail = function () {
+		var emailPatt = /^([0-9a-zA-Z]+([_.-]?[0-9a-zA-Z]+)*@[0-9a-zA-Z]+[0-9,a-z,A-Z,.,-]*(.){1}[a-zA-Z]{2,4})+$/.test("markj287@fullsail.com"); // regular exp check the pattern of a email address
+		console.log(emailPatt)
 	} // end check email function 
 
-
+	// Notes about this function.
+	// I use the test method to search the regular exp to make sure it matches my email criteria 
+	// Console.log emailPatt so we can see the results of the test method
 
 
 	// Function to check url match 
@@ -83,13 +91,13 @@ var myLibrary = function () {
 var lib = myLibrary()
 
 
-// logs out each function to make sure retun is working 
-console.log(lib.checkNumber)
-console.log(lib.checkEmail)
-console.log(lib.checkUrl)
-console.log(lib.smallestValue)
-console.log(lib.sumOfNumbers)
-console.log(lib.stringConversion)
+// checks to make sure the regular expressions are working 
+lib.checkNumber()
+lib.checkEmail()
+lib.checkUrl()
+lib.smallestValue()
+lib.sumOfNumbers()
+lib.stringConversion()
 
 
 
