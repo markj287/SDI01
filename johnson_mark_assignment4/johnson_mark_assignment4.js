@@ -48,11 +48,11 @@ var myLibrary = function () {
 
 	return {
 		"number": checkNumber,
-		"numpatt": numpatt.test(n), // reg exp test method. This will search the string for a specified value, and return true or false 
+		"numPatt": numPatt, // reg exp test method. This will search the string for a specified value, and return true or false 
 		"email": checkEmail,
-		"emailPatt": emailPatt.test(e), // reg exp test method. This will search the string for a specified value, and return true or false 
+		"emailPatt": emailPatt, // reg exp test method. This will search the string for a specified value, and return true or false 
 		"url": checkUrl,
-		"urlPatt": urlPatt.test(u), // reg exp test method. This will search the string for a specified value, and return true or false 
+		"urlPatt": urlPatt, // reg exp test method. This will search the string for a specified value, and return true or false 
 		"small": smallestValue,
 		"r": r,  // this is the number that is given in the array 
 		"sum": sumOfNumbers,
@@ -61,12 +61,8 @@ var myLibrary = function () {
 }
 
 
-stringConversion()
-
-
-
-
-
+var checkNumber = myLibrary()
+checkNumber()
 
 
 
