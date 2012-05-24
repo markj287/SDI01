@@ -30,10 +30,17 @@ var myLibrary = function () {
 	// Console.log emailPatt so we can see the results of the test method
 
 
+
+
 	// Function to check url match 
-	var checkUrl = function (u) {
-		var urlPatt = new Regexp ("^(http[s]?://|ftp://)?(www\.)?[a-zA-Z0-9-\.]+\.(com|org|net|mil|edu|ca|co.uk|com.au|gov)$"); // regular exp check the pattern of a url. I used the reg exp built in contructor method 
+	var checkUrl = function () {
+		var urlPatt = new RegExp ("^(http[s]?://|ftp://)?(www\.)?[a-zA-Z0-9-\.]+\.(com|org|net|edu|gov)$").test("http://fullsail.edu"); // regular exp check the pattern of a url. I used the reg exp built in contructor method 
+		console.log(urlPatt)
 	} // end check url function 
+
+	// Notes about this function.
+	// I use the test method to search the regular exp to make sure it matches my url criteria 
+	// Console.log urlPatt so we can see the results of the test method
 
 
 
