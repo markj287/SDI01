@@ -64,7 +64,7 @@ var myLibrary = function () {
 
 	// Function to get sum of all numbers 
 	var sumOfNumbers = function () {
-		var sum = [67,45,34,37,156,22,7,8,3,"b"]; // private array 
+		var sum = [67,"JavaScript is awesome",45,34,37,"SDI",156,22,7,8,3,"b"]; // private array 
 		var result = 0;
 		// use function isNaN to find numbers different from strings in the array
 		for (var i = 0; i< sum.length; i++) {
@@ -76,6 +76,9 @@ var myLibrary = function () {
 		console.log(result)
 	} // end sum of all numbers function 
 
+	// Notes about this function.
+	// Used isNanN function to parse out my number from strings in my private array
+	// looped through the length of the array then parse it with parseInt, then console.log the result
 
 
 
@@ -85,10 +88,13 @@ var myLibrary = function () {
 		console.log(parseInt("42"));  // used parseInt function to convert it to an actual number 
 	}
 
+	// Notes on this function.
+	// Used parseInt to convert the string to a number 
+	// This one was pretty simple 
 
 
 
-
+	// retrun the an object with all my function making them public and accessible outside of myLibrary function 
 	return {
 		"checkNumber": checkNumber,  
 		"checkEmail": checkEmail,
