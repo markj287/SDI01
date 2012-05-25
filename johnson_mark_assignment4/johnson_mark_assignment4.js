@@ -47,18 +47,24 @@ var myLibrary = function () {
 
 	// Function to get smallest number in an array
 	var smallestValue = function() {
+
 	// this is an array constructor that will get the min value in my array 
-		Array.prototype.minGreaterThan = function(a){
-			var number = [100,37,103,23,54,31,26,78,109,34],givenNumber = 20; // private array with given number set at 20
+		Array.prototype.minGreaterThan = function(){
 			var t = this,r = Number.POSITIVE_INFINITY,i; // this is the positive infinity property. This will allow us to find the samllest value less than the given number
 				for (i = 0; i<t.length; i++) 
 					if (a<t[i] && t[i] < r) r = t[i];
 
-				console.log(givenNumber)
+		return r
+
+		var number = [100,37,103,23,54,31,26,78,109,34],givenNumber = 24; // array with given number set at 24, can be changes to any number 
+		console.log("The smallest number in the array is " + number.minGreaterThan(givenNumber)); // explains the number with concatenation
+
 		}	
 	} // end samllest value function 
 
-
+	// Notes on this function.
+	// Used Array.prototype.minGreaterThan which says take the minimum number greater than our given number
+	// Used 
 
 
 
@@ -77,7 +83,7 @@ var myLibrary = function () {
 	} // end sum of all numbers function 
 
 	// Notes about this function.
-	// Used isNanN function to parse out my number from strings in my private array
+	// Used isNanN function to parse out my number from strings in my private array. NaN means Not a Number 
 	// looped through the length of the array then parse it with parseInt, then console.log the result
 
 
@@ -94,7 +100,7 @@ var myLibrary = function () {
 
 
 
-	// retrun the an object with all my function making them public and accessible outside of myLibrary function 
+	// retrun the an object with all my methods making them public and accessible outside of myLibrary function 
 	return {
 		"checkNumber": checkNumber,  
 		"checkEmail": checkEmail,
@@ -110,7 +116,7 @@ var myLibrary = function () {
 var lib = myLibrary()
 
 
-// checks to make sure the regular expressions are working 
+// calls the methods 
 lib.checkNumber()
 lib.checkEmail()
 lib.checkUrl()
