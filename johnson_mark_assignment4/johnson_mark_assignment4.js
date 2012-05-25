@@ -49,17 +49,17 @@ var myLibrary = function () {
 	var smallestValue = function() {
 
 	// this is an array constructor that will get the min value in my array 
-		Array.prototype.minGreaterThan = function(){
+		Array.prototype.minGreaterThan = function(a){
 			var t = this,r = Number.POSITIVE_INFINITY,i; // this is the positive infinity property. This will allow us to find the samllest value less than the given number
 				for (i = 0; i<t.length; i++) 
 					if (a<t[i] && t[i] < r) r = t[i];
 
 		return r
+		}	
 
 		var number = [100,37,103,23,54,31,26,78,109,34],givenNumber = 24; // array with given number set at 24, can be changes to any number 
 		console.log("The smallest number in the array is " + number.minGreaterThan(givenNumber)); // explains the number with concatenation
 
-		}	
 	} // end samllest value function 
 
 	// Notes on this function.
@@ -120,7 +120,7 @@ var lib = myLibrary()
 lib.checkNumber()
 lib.checkEmail()
 lib.checkUrl()
-console.log(lib.smallestValue())
+lib.smallestValue()
 lib.sumOfNumbers()
 lib.stringConversion()
 
