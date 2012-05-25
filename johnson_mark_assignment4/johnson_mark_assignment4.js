@@ -63,8 +63,8 @@ var myLibrary = function () {
 	} // end samllest value function 
 
 	// Notes on this function.
-	// Used Array.prototype.minGreaterThan which says take the minimum number greater than our given number
-	// Used 
+	// Used Array.prototype.minGreaterThan which finds the minimum number greater than our given number
+	// The this keyword refers to the function i am executing which is anonymous 
 
 
 
@@ -120,7 +120,7 @@ var lib = myLibrary()
 lib.checkNumber()
 lib.checkEmail()
 lib.checkUrl()
-lib.smallestValue()
+console.log(lib.smallestValue())
 lib.sumOfNumbers()
 lib.stringConversion()
 
